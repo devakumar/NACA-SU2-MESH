@@ -1,7 +1,9 @@
 NACA SU2 Mesh using Gmsh
 ====
 
-Using nacamesh script the SU2 mesh for any airfoil can be generated as
+Bash script for auto generating SU2 mesh for NACA airfoil
+
+Using nacamesh script the SU2 mesh for naca airfoil can be generated as
 follows
 
 nacamesh (NACAairfoil-number) (no-of-points-on-airfoil)
