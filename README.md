@@ -1,21 +1,15 @@
-NACA [![Build Status](https://travis-ci.org/Gjacquenot/naca.svg?branch=master)](https://travis-ci.org/Gjacquenot/naca)
+NACA SU2 Mesh using Gmsh
 ====
 
-Code to generate 4 and 5 digit NACA profiles. 
+Using nacamesh script the SU2 mesh for any airfoil can be generated as
+follows
 
-Works with Python 2 and Python 3.
+nacamesh (NACAairfoil-number) (no-of-points-on-airfoil)
 
-Problems/Improvements: Dirk Gorissen <dgorissen@gmail.com>
+e.g:
+	nacamesh 0012 200
+	nacamesh 2314 50
 
-    # Get help
-    python naca.py -h
-    # Generate points for NACA profile 2412
-    python naca.py -p 2412
-    # Generate points for NACA profile 2412 with 300 points
-    python naca.py -p 2412 -n 300
-    # Generate points for NACA profile 2412 and display the result
-    python naca.py -p 2412 -d
-    # Generate points for NACA profile 2412 with smooth points spacing and display the result
-    python naca.py -p 2412 -d -s
-    # Generate points for several profiles
-    python naca.py -p "2412 23112" -d -s
+Caution: Not tested with odd number of points	
+
+Suggestions: deva.aerospace@gmail.com
